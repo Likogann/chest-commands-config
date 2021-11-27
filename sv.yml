@@ -1,0 +1,117 @@
+######################
+#+                  +#
+#   MENU SETTINGS    #
+#+                  +#
+######################
+
+menu-settings:
+
+  # REQUIRED
+  # Appears as the title of the menu.
+  name: '&eVanish Menu'
+
+  # REQUIRED
+  # The number of rows in the menu.
+  rows: 1
+
+  # OPTIONAL
+  # Set which commands a player can execute to open the menu.
+  commands:
+  - 'v'
+
+  # OPTIONAL
+  # How frequently the menu will be refreshed, in seconds.
+  # Useful if you have placeholders in icon descriptions.
+  auto-refresh: 5
+
+  # OPTIONAL
+  # These actions will be executed when the menu is opened.
+  # Supports all the icon action types.
+  open-actions:
+  - ''
+
+  # OPTIONAL
+  # The menu will open only when right-clicking with a compass.
+  open-with-item:
+    material: 
+    left-click: false
+    right-click: false
+
+
+######################
+#+                  +#
+#       ICONS        #
+#+                  +#
+######################
+
+
+spawn-command:
+  MATERIAL: barrier
+  POSITION-X: 1
+  POSITION-Y: 1
+  KEEP-OPEN: true
+  NAME: '&e/Toggle Vanish'
+  LORE:
+    - '/sv'
+  ACTIONS:
+    - 'sv'
+    
+fake-login:
+  MATERIAL: slime_block
+  POSITION-X: 3
+  POSITION-Y: 1
+  KEEP-OPEN: true
+  NAME: '&aFake Login'
+  LORE:
+    - '/sv login'
+  ACTIONS:
+    - 'sv login'
+    
+    
+fake-logout:
+  MATERIAL: honey_block
+  POSITION-X: 4
+  POSITION-Y: 1
+  KEEP-OPEN: true
+  NAME: '&cFake logout'
+  LORE:
+    - '/sv logout'
+  ACTIONS:
+    - 'sv logout'
+
+
+
+tipu:
+  MATERIAL: magenta glazed terracotta
+  POSITION-X: 6
+  POSITION-Y: 1
+  KEEP-OPEN: true
+  NAME: '&eToggle Item Pick up'
+  LORE:
+    - '/sv tipu'
+  ACTIONS:
+    - 'sv tipu'
+    
+    
+list:
+  MATERIAL: book
+  POSITION-X: 7
+  POSITION-Y: 1
+  KEEP-OPEN: true
+  NAME: '&eShow vanished players'
+  LORE:
+    - '/sv list'
+  ACTIONS:
+    - 'sv list'
+    
+    
+reload:
+  MATERIAL: redstone torch
+  POSITION-X: 9
+  POSITION-Y: 1
+  KEEP-OPEN: true
+  NAME: '&cReload Plugin'
+  LORE:
+    - '/sv reload'
+  ACTIONS:
+    - 'sv reload'
